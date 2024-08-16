@@ -1,5 +1,5 @@
 import { menuItems } from "../../../constants/menuItem";
-import iconUrl from "../../../assets/icon-external.svg"
+import iconUrl from "../../../assets/images/icon-external.svg"
 
 const MenuItems = () => {
   return (

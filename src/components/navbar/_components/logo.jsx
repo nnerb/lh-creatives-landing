@@ -1,3 +1,3 @@
-import logoUrl from "../../../assets/logo.svg"
+import logoUrl from "../../../assets/images/logo.svg"
 
 export const Logo = () => <img src={logoUrl} alt="Logo" className="logo" />
