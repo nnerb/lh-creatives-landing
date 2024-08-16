@@ -1,0 +1,19 @@
+@font-face {
+  font-family: "Roboto";
+  src:
+    local("Roboto"),
+    url("../src/assets/fonts/Roboto-Bold.ttf") format("woff");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.logo {
+  width: 143px;
+  height: 50px;
+}
+

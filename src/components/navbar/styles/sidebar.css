@@ -1,0 +1,55 @@
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  max-width: 375px;
+  height: 100%;
+  background-color: #FFF000;
+  color: #333333;
+  display: flex;
+  flex-direction: column;
+  padding: 7px 15px;
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in-out;
+  z-index: 1000;
+}
+
+.sidebar.open {
+  transform: translateX(0);
+}
+
+.close-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 10px;
+}
+
+.close-button .line {
+  width: 20px;
+  height: 2px;
+  background-color: #333333;
+  margin: 4px 0;
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+.sidebar-menu {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 38px;
+  margin-top: 26px;
+}
+
+.menu-item {
+  text-decoration: none;
+  color: #333333;
+  font-size: 20px;
+  transition: color 0.3s;
+}
+

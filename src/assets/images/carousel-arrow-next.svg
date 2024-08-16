@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="51" height="51" viewBox="0 0 51 51">
+  <defs>
+    <filter id="Ellipse_6" x="0" y="0" width="51" height="51" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="carousel-arrow-next" transform="translate(-1562.5 -202.5)">
+    <g transform="matrix(1, 0, 0, 1, 1562.5, 202.5)" filter="url(#Ellipse_6)">
+      <circle id="Ellipse_6-2" data-name="Ellipse 6" cx="18" cy="18" r="18" transform="translate(7.5 7.5)" fill="#fff"/>
+    </g>
+    <path id="Path_6" data-name="Path 6" d="M1601,2020l5,5-5,5" transform="translate(-15.5 -1796.5)" fill="none" stroke="#707070" stroke-width="3"/>
+  </g>
+</svg>
