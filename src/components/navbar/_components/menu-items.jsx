@@ -5,9 +5,9 @@ const MenuItems = () => {
   return (
     <>
       {menuItems.map((item) =>  (
-          <a href={item.href} key={item.name} className='menu-item'>
-            {item.name}
-            {item.name === 'RECRUIT' && <img src={iconUrl} alt="" className="icon" />}
+        <a href={item.href} key={item.name} className='menu-item'>
+          {item.name}
+          {item.name === 'RECRUIT' && <img src={iconUrl} alt="" className="icon" />}
         </a>
        )   
       )}

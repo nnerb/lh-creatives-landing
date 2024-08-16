@@ -1,19 +1,52 @@
+:root {
+  /* Colors */
+  --sidebar-background-color: #FFF000;
+  --sidebar-text-color: #333333;
+  --close-button-line-color: #333333;
+
+  /* Sizes */
+  --sidebar-max-width: 375px;
+  --sidebar-padding-vertical: 7px;
+  --sidebar-padding-horizontal: 15px;
+  --close-button-padding: 10px;
+  --close-button-line-width: 20px;
+  --close-button-line-height: 2px;
+
+  /* Spacing */
+  --sidebar-gap: 38px;
+  --sidebar-menu-margin-top: 26px;
+
+  /* Transition */
+  --sidebar-transition: transform 0.3s ease-in-out;
+  --close-button-line-transition: transform 0.3s, opacity 0.3s;
+}
+
 .sidebar {
   position: fixed;
   top: 0;
   right: 0;
   width: 100%;
-  max-width: 375px;
+  max-width: var(--sidebar-max-width);
   height: 100%;
-  background-color: #FFF000;
-  color: #333333;
+  background-color: var(--sidebar-background-color);
+  color: var(--sidebar-text-color);
   display: flex;
   flex-direction: column;
-  padding: 7px 15px;
+  padding: var(--sidebar-padding-vertical) var(--sidebar-padding-horizontal);
   transform: translateX(100%);
-  transition: transform 0.3s ease-in-out;
+  transition: var(--sidebar-transition);
   z-index: 1000;
 }
+
+.sidebar-menu {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--sidebar-gap);
+  margin-top: var(--sidebar-menu-margin-top);
+}
+
 
 .sidebar.open {
   transform: translateX(0);
@@ -26,30 +59,14 @@
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  padding: 10px;
+  padding: var(--close-button-padding);
 }
 
 .close-button .line {
-  width: 20px;
-  height: 2px;
-  background-color: #333333;
+  width: var(--close-button-line-width);
+  height: var(--close-button-line-height);
+  background-color: var(--close-button-line-color);
   margin: 4px 0;
-  transition: transform 0.3s, opacity 0.3s;
-}
-
-.sidebar-menu {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 38px;
-  margin-top: 26px;
-}
-
-.menu-item {
-  text-decoration: none;
-  color: #333333;
-  font-size: 20px;
-  transition: color 0.3s;
+  transition: var(--close-button-line-transition);
 }
 
