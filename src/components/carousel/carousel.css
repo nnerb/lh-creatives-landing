@@ -1,0 +1,47 @@
+.carousel-container {
+  position: relative; /* For positioning arrows */
+  margin: 0 auto; /* Center the carousel */
+  overflow: hidden;
+}
+
+.carousel-images-container {
+  display: flex;
+  gap: 1rem; /* Space between images */
+  transition: transform 0.5s ease; /* Smooth sliding transition */
+}
+
+.carousel-image-wrapper {
+  flex: 0 0 auto; /* Prevent shrinking */
+  width: 302px; /* Fixed width of images */
+  box-sizing: border-box; /* Include padding and border in width */
+}
+
+.carousel-image-wrapper img {
+  width: 100%; /* Ensure images fill their container */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Remove any extra space below images */
+}
+
+.arrow {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.left-arrow {
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+}
+
+.right-arrow {
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+}
