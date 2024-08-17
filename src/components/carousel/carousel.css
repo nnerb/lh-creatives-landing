@@ -1,15 +1,4 @@
-:root {
-  --carousel-width: 100%;
-  --arrow-size: 50px;
-  --arrow-position: -2%;
-  --arrow-transition: 0.5s ease;
-  --arrow-left: var(--arrow-position);
-  --arrow-right: var(--arrow-position);
-  
-  --arrow-position-sm: -2.7%;
-  --arrow-position-md: -4.2%;
-  --arrow-position-xs: -9%;
-}
+@import url("/src/index.css");
 
 .carousel-container {
   position: relative; 

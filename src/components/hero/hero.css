@@ -1,24 +1,4 @@
-:root {
-  /* General Sizes */
-  --hero-background-height: 600px;
-  --hero-padding: 55px;
-  --hero-overlay-margin-top: 20px;
-  --hero-overlay-margin-top-mobile: 15px;
-
-  /* Text Sizes and Line Heights */
-  --heading-font-size: clamp(60px, 10vw + 20px, 120px);
-  --heading-line-height: clamp(88px, 10vw + 26px, 160px);
-  --paragraph-font-size: clamp(32px, 5vw + 12px, 48px);
-  --paragraph-line-height: clamp(40px, 5vw + 16px, 53px);
-
-  /* Text Shadow Colors */
-  --heading-text-shadow: 0px 0px 5px #FFFFFF;
-  --paragraph-text-shadow: 0px 0px 3px #FFFFFF;
-
-  /* Background Images */
-  --hero-background-image-desktop: url('/src/assets/images/hero-bg_pc.png');
-  --hero-background-image-mobile: url('/src/assets/images/hero-bg_sp.png');
-}
+@import url("/src/index.css");
 
 .hero-container {
   width: 100%;

@@ -1,25 +1,4 @@
-:root {
-  /* Colors */
-  --sidebar-background-color: #FFF000;
-  --sidebar-text-color: #333333;
-  --close-button-line-color: #333333;
-
-  /* Sizes */
-  --sidebar-max-width: 375px;
-  --sidebar-padding-vertical: 7px;
-  --sidebar-padding-horizontal: 15px;
-  --close-button-padding: 10px;
-  --close-button-line-width: 20px;
-  --close-button-line-height: 2px;
-
-  /* Spacing */
-  --sidebar-gap: 38px;
-  --sidebar-menu-margin-top: 26px;
-
-  /* Transition */
-  --sidebar-transition: transform 0.3s ease-in-out;
-  --close-button-line-transition: transform 0.3s, opacity 0.3s;
-}
+@import url("/src/index.css");
 
 .sidebar {
   position: fixed;

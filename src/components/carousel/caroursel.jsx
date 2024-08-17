@@ -33,12 +33,8 @@ const Carousel = () => {
         newImageHeight = 160
       } else if (window.innerWidth < 970) {
         newImagesToShow = 2
-        newImageWidth = 290
-        newImageHeight = 165
       } else if (window.innerWidth < 1290) {
         newImagesToShow = 3
-        newImageWidth = 295
-        newImageHeight = 168
       } else {
         newImagesToShow = 4
         newImageWidth = 302

@@ -1,28 +1,4 @@
-:root {
-  /* Colors */
-  --navbar-background-color: #FFF000;
-  --menu-item-color: #333333;
-  --contact-button-background-color: hsl(326, 100%, 45%);
-  --contact-button-text-color: #FFFFFF;
-  --line-color: #333333;
-
-  /* Sizes */
-  --navbar-height: 64px;
-  --navbar-padding-vertical: 7px;
-  --navbar-padding-horizontal: 15px;
-  --icon-size: 14px;
-  --line-width: 30px;
-  --line-height: 4px;
-  --hamburger-button-size: 40px;
-  --contact-button-width: 182px;
-  --contact-button-height: 50px;
-
-  /* Spacing */
-  --navbar-gap: 5rem;
-  --menu-item-gap: 40px;
-  --hamburger-line-margin: 4px;
-  --hamburger-line-transition: transform 0.3s, opacity 0.3s;
-}
+@import url("/src/index.css");
 
 .navbar-container {
   background-color: var(--navbar-background-color);

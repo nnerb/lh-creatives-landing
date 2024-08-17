@@ -1,15 +1,111 @@
 @font-face {
-  font-family: "Roboto";
-  src:
-    local("Roboto"),
-    url("../src/assets/fonts/Roboto-Bold.ttf") format("woff");
+  font-family: "Roboto-Bold";
+  src: local("Roboto Bold"),
+       url("../src/assets/fonts/Roboto-Bold.woff") format("woff");
 }
 
+@font-face {
+  font-family: "Roboto-Regular";
+  src: local("Roboto Regular"),
+       url("../src/assets/fonts/Roboto-Regular.woff") format("woff");
+}
+
+/* Global Variables */
+:root {
+  /* Color Variables */
+  --text-color: #333333;
+  --navbar-background-color: #FFF000;
+  --menu-item-color: var(--text-color);
+  --contact-button-background-color: hsl(326, 100%, 45%);
+  --contact-button-text-color: #FFFFFF;
+  --line-color: var(--text-color);
+
+  --sidebar-background-color: #FFF000;
+  --sidebar-text-color: var(--text-color);
+  --close-button-line-color: var(--text-color);
+
+  /* Navbar Variables */
+  --navbar-height: 64px;
+  --navbar-padding-vertical: 7px;
+  --navbar-padding-horizontal: 15px;
+  --icon-size: 14px;
+  --line-width: 30px;
+  --line-height: 4px;
+  --hamburger-button-size: 40px;
+  --contact-button-width: 182px;
+  --contact-button-height: 50px;
+  --navbar-gap: 5rem;
+  --menu-item-gap: 40px;
+  --hamburger-line-margin: 4px;
+  --hamburger-line-transition: transform 0.3s, opacity 0.3s;
+
+  /* Sidebar Variables */
+  --sidebar-max-width: 375px;
+  --sidebar-padding-vertical: 7px;
+  --sidebar-padding-horizontal: 15px;
+  --close-button-padding: 10px;
+  --close-button-line-width: 20px;
+  --close-button-line-height: 2px;
+  --sidebar-gap: 38px;
+  --sidebar-menu-margin-top: 26px;
+  --sidebar-transition: transform 0.3s ease-in-out;
+
+  /* Carousel Variables */
+  --carousel-width: 100%;
+  --arrow-size: 50px;
+  --arrow-position: -2%;
+  --arrow-transition: 0.5s ease;
+  --arrow-left: var(--arrow-position);
+  --arrow-right: var(--arrow-position);
+  --arrow-position-sm: -2.7%;
+  --arrow-position-md: -4.2%;
+  --arrow-position-xs: -9%;
+
+  /* Card Variables */
+  --max-width-card-main: 1256px;
+  --gap-card-main: 90px;
+  --grid-gap: 15px;
+  --four-col-min-width: 302px;
+  --three-col-min-width: 408px;
+  --card-gap: 20px;
+  --card-title-font-size: 24px;
+  --card-text-font-size: 16px;
+  --small-card-width: 165px;
+  --small-three-col-card-width: 345px;
+  --small-four-col-title-font-size: 16px;
+  --small-three-col-title-font-size: 20px;
+  --small-four-col-text-font-size: 14px;
+  --small-three-col-text-font-size: 16px;
+  --small-four-col-img-height: 93px;
+  --small-four-col-img-width: 165px;
+  --small-three-col-img-height: 194px;
+  --small-three-col-img-width: 345px;
+  --small-four-col-card-gap: 5px;
+  --small-three-col-card-gap: 10px;
+
+  /* Hero Variables */
+  --hero-background-height: 600px;
+  --hero-padding: 55px;
+  --hero-overlay-margin-top: 20px;
+  --hero-overlay-margin-top-mobile: 15px;
+  --heading-font-size: clamp(60px, 10vw + 20px, 120px);
+  --heading-line-height: clamp(88px, 10vw + 26px, 160px);
+  --paragraph-font-size: clamp(32px, 5vw + 12px, 48px);
+  --paragraph-line-height: clamp(40px, 5vw + 16px, 53px);
+  --heading-text-shadow: 0px 0px 5px #FFFFFF;
+  --paragraph-text-shadow: 0px 0px 3px #FFFFFF;
+  --hero-background-image-desktop: url('/src/assets/images/hero-bg_pc.png');
+  --hero-background-image-mobile: url('/src/assets/images/hero-bg_sp.png');
+}
+
+/* Global Styles */
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto-Bold", sans-serif;
+  font-weight: bold;
+  color: var(--text-color);
 }
 
 .container {
@@ -20,4 +116,3 @@
   width: 143px;
   height: 50px;
 }
-
