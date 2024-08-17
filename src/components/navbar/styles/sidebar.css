@@ -35,7 +35,6 @@
   padding: var(--sidebar-padding-vertical) var(--sidebar-padding-horizontal);
   transform: translateX(100%);
   transition: var(--sidebar-transition);
-  z-index: 1000;
 }
 
 .sidebar-menu {

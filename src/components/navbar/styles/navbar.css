@@ -34,6 +34,7 @@
   height: var(--navbar-height);
   align-items: center;
   padding: var(--navbar-padding-vertical) var(--navbar-padding-horizontal);
+  z-index: 1000;
 }
 
 .navbar-menu {

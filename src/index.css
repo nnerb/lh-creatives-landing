@@ -12,6 +12,10 @@
   font-family: "Roboto", sans-serif;
 }
 
+.container {
+  overflow-x: hidden;
+}
+
 .logo {
   width: 143px;
   height: 50px;
