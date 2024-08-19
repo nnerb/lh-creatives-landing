@@ -22,10 +22,9 @@
   padding: 0 var(--hero-padding);
 }
 
-h1, p {
+.hero-overlay h1, .hero-overlay p {
   color: #333333;
   letter-spacing: 0;
-  text-align: center;
 }
 
 .hero-overlay > h1 {
@@ -39,6 +38,7 @@ h1, p {
   line-height: var(--paragraph-line-height);
   text-shadow: var(--paragraph-text-shadow);
   margin-top: var(--hero-overlay-margin-top);
+  font-family: var(--paragraph-font-family);
 }
 
 @media(max-width: 980px) {

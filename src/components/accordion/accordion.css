@@ -1,0 +1,19 @@
+@import url("/src/index.css");
+
+.section-contents {
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  width: 100%;
+  height: 290px;
+}
+
+.center-text {
+  display: flex;
+  align-items: start; /* Center vertically */
+  justify-content: start; /* Center horizontally */
+  height: 200px; /* Set a height for vertical centering */
+  flex-direction: column;
+}

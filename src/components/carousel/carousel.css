@@ -44,23 +44,5 @@
   transform: translateY(-50%);
 }
 
-@media (max-width: 1289px) {
-  :root {
-    --arrow-left: var(--arrow-position-sm);
-    --arrow-right: var(--arrow-position-sm);
-  }
-} 
 
-@media (max-width: 969px) {
-  :root {
-    --arrow-left: var(--arrow-position-md);
-    --arrow-right: var(--arrow-position-md);
-  }
-} 
 
-@media (max-width: 641px) {
-  :root {
-    --arrow-left: var(--arrow-position-xs);
-    --arrow-right: var(--arrow-position-xs);
-  }
-}

@@ -1,12 +1,9 @@
 @import url("/src/index.css");
 
 .card-main {
-  max-width: var(--max-width-card-main);
-  width: 100%;
-  margin: 0 auto;
   display: flex;
   flex-direction: column;  
-  gap: var(--gap-card-main);
+  gap: var(--gap-main);
 }
 
 .four-col-card-container {
@@ -20,7 +17,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(var(--three-col-min-width), 1fr));
   place-items: center;
-  gap: var(--grid-gap);
+  gap: var(--three-card-gap);
 }
 
 .four-col-card, .three-col-card {
@@ -34,18 +31,10 @@
   width: 100%;
 }
 
-.four-col-card {
-  max-width: var(--four-col-min-width);
-}
-
-.three-col-card {
-  max-width: var(--three-col-min-width);
-}
-
 .four-col-card-content, .three-col-card-content {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: var(--grid-gap)
 }
 
 .four-col-card-title, .three-col-card-title {
@@ -55,7 +44,6 @@
 .four-col-card-text, .three-col-card-text {
   text-align: start;
   font-size: var(--card-text-font-size);
-  font-family: "Roboto-Regular", sans-serif;
   font-weight: normal;
 }
 
@@ -72,32 +60,18 @@
 }
 
 @media (max-width: 375px) {
-  .four-col-card img {
-    height: var(--small-four-col-img-height);
-    width: var(--small-four-col-img-width); 
+
+  .three-col-card-container {
+    gap: var(--small-grid-gap)
   }
 
-  .three-col-card img {
-    height: var(--small-three-col-img-height);
-    width: var(--small-three-col-img-width);
+  .four-col-card:nth-child(3),
+  .four-col-card:nth-child(4) {
+    margin-top: 15px;
   }
 
-  .four-col-card {
-    max-width: var(--small-card-width);
-    width: 100%;
-  }
-
-  .three-col-card {
-    max-width: var(--small-three-col-card-width);
-    width: 100%;
-  }
-
-  .four-col-card-content {
-    gap: var(--small-four-col-card-gap);
-  }
-
-  .three-col-card-content {
-    gap: var(--small-three-col-card-gap)
+  .four-col-card-content, .three-col-card-content  {
+    gap: var(--small-col-card-gap);
   }
 
   .four-col-card-title {
@@ -115,14 +89,15 @@
   .three-col-card-text {
     font-size: var(--small-three-col-text-font-size);
   }
-}
 
-@media (max-width: 374px) {
   .three-col-card img, .four-col-card img {
     width: 100%;
     height: auto;
   }
 }
+
+
+
 
 
 
