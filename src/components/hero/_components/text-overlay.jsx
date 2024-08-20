@@ -5,7 +5,7 @@ const TextOverlay = ({ heading, paragraph}) => {
       <h1>{heading}</h1>
       <p>{paragraph}</p>
     </div>
-   );
+   )
 }
  
 export default TextOverlay
