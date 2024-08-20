@@ -1,6 +1,7 @@
 import Accordion from "./components/accordion/accordion"
 import Card from "./components/card/card"
 import Carousel from "./components/carousel/caroursel"
+import Footer from "./components/footer/footer"
 import Form from "./components/form/form"
 import Hero from "./components/hero/hero"
 import Navbar from "./components/navbar/navbar"
@@ -23,7 +24,7 @@ function App() {
         </div>
       </div>
       </div>
-      
+      <Footer />
     </div>
   )
 }

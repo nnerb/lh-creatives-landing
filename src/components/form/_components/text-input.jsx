@@ -1,5 +1,4 @@
-import PropTypes from 'prop-types';
-
+/* eslint-disable react/prop-types */
 const TextInput = ({ label, type, name, value, onChange }) => {
   return (
     <div className="form-group">
@@ -21,12 +20,4 @@ const TextInput = ({ label, type, name, value, onChange }) => {
   );
 };
 
-TextInput.propTypes = {
-  label: PropTypes.string.isRequired,
-  type: PropTypes.string.isRequired,
-  name: PropTypes.string.isRequired,
-  value: PropTypes.string.isRequired,
-  onChange: PropTypes.func.isRequired,
-};
-
-export default TextInput;
+export default TextInput

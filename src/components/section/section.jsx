@@ -1,8 +1,8 @@
-import firstSectionImage from "../../assets/images/section-img1.png";
-import secondSectionImage from "../../assets/images/section-img2.png";
+import firstSectionImage from "../../assets/images/section-img1.png"
+import secondSectionImage from "../../assets/images/section-img2.png"
 import "./section.css";
 
-const sectionImages = [firstSectionImage, secondSectionImage];
+const sectionImages = [firstSectionImage, secondSectionImage]
 
 const Section = () => {
   return (
@@ -24,7 +24,7 @@ const Section = () => {
         </div>
       ))}
     </div>
-  );
-};
+  )
+}
 
-export default Section;
+export default Section

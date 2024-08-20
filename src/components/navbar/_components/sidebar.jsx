@@ -15,13 +15,12 @@ const Sidebar = ({ isOpen }) => {
     <div className={`sidebar ${isOpen ? 'open' : ''}`}>
       <Logo />
       <nav className="sidebar-menu">
-        <MenuItems  />
+        <MenuItems />
         <ContactButton style={SIDEBAR_CONTACT_BUTTON_STYLE} />
       </nav>
-      
     </div>
-  );
-};
+  )
+}
 
-export default Sidebar;
+export default Sidebar
 

@@ -1,9 +1,5 @@
 @import url("/src/index.css");
 
-*, label, legend, input {
-  font-family: 'Roboto-Regular', sans-serif;
-}
-
 .form-group-container {
   display: flex;
   flex-direction: column;
@@ -19,7 +15,7 @@
 
 .form-group-text {
   background-color: var(--form-background-color);
-  padding: 26px 16px;
+  padding: 26px 15px;
   flex-shrink: 0;
   width: 302px;
   font-family: 'Roboto-Regular', sans-serif;
@@ -134,16 +130,17 @@
 /* Media Queries */
 @media (max-width: 900px) {
   .form-group-container {
-    gap: 15px;
+    gap: var(--form-gap-mobile)
   }
 
   .form-group {
     flex-direction: column;
-    gap: var(--form-gap);
+    gap: var(--form-group-gap-mobile);
+    align-items: start;
   }
 
   .form-group:last-child {
-    padding-bottom: 15px;
+    padding-bottom: 20px;
   }
 
   .form-group-text {
@@ -165,12 +162,17 @@
   }
 }
 
-@media (max-width: 593px) {
+@media (max-width: 598px) {
   .form-radio-container,
   .form-checkbox-container {
     display: grid;
     width: 100%;
     grid-template-columns: repeat(2, 116px);
+  }
+
+  .form-group-box:nth-child(3),
+  .form-group-box:nth-child(4) {
+    margin-top: -15px;
   }
 
   .submit-button-container {

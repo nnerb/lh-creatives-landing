@@ -62,7 +62,7 @@ const Accordion = () => {
   }, [])
 
   return (
-    <div className="accordion-container">
+    <div className="accordion-container" id="access">
       {accordionItems.map((item, index) => (
         <div key={item.id} className="accordion-main">
           <div className="accordion-header" onClick={() => toggleAccordion(item.id)}>

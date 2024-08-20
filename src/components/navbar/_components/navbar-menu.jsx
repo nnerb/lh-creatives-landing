@@ -5,7 +5,7 @@ const NavbarMenu = () => {
     <div className="navbar-menu">
       <MenuItems/>
     </div>
-   );
+   )
 }
  
-export default NavbarMenu;
+export default NavbarMenu

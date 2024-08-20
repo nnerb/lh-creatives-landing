@@ -22,7 +22,7 @@ const CustomArrow = (props) => {
         </g>
       </svg>
     </components.DropdownIndicator>
-  );
-};
+  )
+}
 
 export default CustomArrow

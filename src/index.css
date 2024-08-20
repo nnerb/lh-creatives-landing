@@ -1,7 +1,7 @@
 @font-face {
   font-family: "Roboto-Regular";
   src: local("Roboto Regular"),
-       url("../src/assets/fonts/Roboto-Regular.woff") format("woff");
+       url("../src/assets/fonts/Roboto-Regular.ttf") format("woff");
 }
 
 @font-face {
@@ -84,9 +84,9 @@
   --arrow-position-lg: -2.7%;
 
   /* Card Variables */
-  --grid-gap: 15px;
+  --grid-gap: 16px;
   --card-gap: 20px;
-  --three-card-gap: 16px;
+  --card-content-gap: 15px;
   --card-title-font-size: 24px;
   --card-text-font-size: 16px;
   --four-col-min-width: 302px;
@@ -130,6 +130,8 @@
   --accordion-gap-mobile: 5px;
   --accordion-content-margin-top-mobile: 15px;
   --accordion-font-size-mobile: 16px;
+  --accordion-icon-height-mobile: 7px;
+  --accordion-icon-width-mobile: 15px;
 
   /* Form Variables */
   --form-text-color: var(--text-color);
@@ -139,7 +141,9 @@
   --input-font-size: 16px;
   --input-border-radius: 3px;
   --checkmark-color: #E3007F;
-  --form-gap: 20px;
+  --form-gap-mobile: 20px;
+  --form-group-gap: 22px;
+  --form-group-gap-mobile: var(--form-gap-mobile);
   --submit-button-background-color: var(--contact-button-background-color);
   --submit-button-text-color: var(--contact-button-text-color);
   --submit-button-padding: 12px 59px;
@@ -148,6 +152,9 @@
   --form-border-width: 1px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
 
 /* Global Styles */
 * {
@@ -158,9 +165,8 @@
   color: var(--text-color);
 }
 
-p {
+p, label, legend, input {
   font-family: "Roboto Regular", sans-serif;
-  font-weight: normal;
 }
 
 .container {

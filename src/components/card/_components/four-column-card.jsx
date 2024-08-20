@@ -18,7 +18,7 @@ const FourColumnCard = () => {
       </div>
     ))}
   </div>
-   );
+   )
 }
  
-export default FourColumnCard;
+export default FourColumnCard

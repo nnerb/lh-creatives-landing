@@ -8,4 +8,4 @@ const TextOverlay = ({ heading, paragraph}) => {
    );
 }
  
-export default TextOverlay;
+export default TextOverlay

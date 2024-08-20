@@ -1,11 +1,11 @@
 .accordion-container {
   display: flex;
   flex-direction: column;
-  gap: var(--accordion-gap, 10px);
+  gap: var(--accordion-gap);
 }
 
 .accordion-main {
-  padding: var(--accordion-padding, 20px);
+  padding: var(--accordion-padding);
   border: var(--accordion-border, 1px solid #AAAAAA);
   overflow: hidden;
   transition: all var(--accordion-transition-duration, 0.15s) ease;
@@ -47,7 +47,7 @@
 
 .accordion-content.open {
   opacity: 1;
-  margin-top: var(--accordion-content-margin-top-open, 21.5px);
+  margin-top: var(--accordion-content-margin-top-open);
 }
 
 @media(max-width: 768px) {
@@ -58,6 +58,11 @@
   .accordion-header *, .accordion-content p {
     color: var(--accordion-text-color-mobile);
   }
+
+  /* .accordion-icon {
+    height: var(--accordion-icon-height-mobile);
+    width: var(--accordion-icon-width-mobile);
+  } */
 
   .accordion-container { 
     gap: var(--accordion-gap-mobile);

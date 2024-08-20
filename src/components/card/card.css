@@ -17,7 +17,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(var(--three-col-min-width), 1fr));
   place-items: center;
-  gap: var(--three-card-gap);
+  gap: var(--grid-gap);
 }
 
 .four-col-card, .three-col-card {
@@ -34,7 +34,7 @@
 .four-col-card-content, .three-col-card-content {
   display: flex;
   flex-direction: column;
-  gap: var(--grid-gap)
+  gap: var(--card-content-gap)
 }
 
 .four-col-card-title, .three-col-card-title {

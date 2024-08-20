@@ -30,17 +30,22 @@ const SelectInput = ({ options, value, onChange }) => {
   }, [])
 
   return (
-    <div className="form-group-input">
-      <Select
-        options={options}
-        styles={customSelectStyle(windowWidth)}
-        value={value}
-        onChange={onChange}
-        components={{ DropdownIndicator: CustomArrow }}
-        placeholder=""
-      />
+    <div className="form-group">
+      <div className="form-group-text">
+        <label>Select Field</label>
+      </div>
+        <div className="form-group-input">
+          <Select
+            options={options}
+            styles={customSelectStyle(windowWidth)}
+            value={value}
+            onChange={onChange}
+            components={{ DropdownIndicator: CustomArrow }}
+            placeholder=""
+          />
+        </div>
     </div>
-  );
-};
+  )
+}
 
 export default SelectInput

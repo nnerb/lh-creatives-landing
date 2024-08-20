@@ -88,7 +88,7 @@
   transform: translate(0, -12px) rotate(-45deg);
 }
 
-@media(max-width: 980px) {
+@media(max-width: 992px) {
   .navbar-menu, .contact-div {
     display: none;
   }

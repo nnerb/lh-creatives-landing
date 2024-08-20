@@ -1,9 +1,9 @@
-import { useEffect, useState } from "react";
-import NavbarMenu from "./_components/navbar-menu";
+import { useEffect, useState } from "react"
+import NavbarMenu from "./_components/navbar-menu"
 import './styles/navbar.css'
-import Sidebar from "./_components/sidebar";
-import { Logo } from "./_components/logo";
-import ContactButton from "./_components/contact-button";
+import Sidebar from "./_components/sidebar"
+import { Logo } from "./_components/logo"
+import ContactButton from "./_components/contact-button"
 
 
 const Navbar = () => {
@@ -21,9 +21,9 @@ const Navbar = () => {
 
   useEffect(() => {
     if (windowWidth > 980) { 
-      setIsOpen(false);
+      setIsOpen(false)
     }
-  }, [windowWidth]);
+  }, [windowWidth])
 
   return ( 
     <div className="navbar-container">

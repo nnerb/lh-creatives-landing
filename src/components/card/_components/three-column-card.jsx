@@ -19,7 +19,7 @@ const ThreeColumnCard = () => {
         </div>
       ))}
     </div>
-  );
+  )
 }
  
-export default ThreeColumnCard;
+export default ThreeColumnCard

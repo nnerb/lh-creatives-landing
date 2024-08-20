@@ -45,7 +45,6 @@ const Carousel = () => {
       setImageWidth(newImageWidth)
       setImageHeight(newImageHeight)
 
-      // Reset the currentIndex to ensure it's within bounds
       setCurrentIndex(prevIndex => {
         const maxIndex = totalImages - newImagesToShow
         if (prevIndex > maxIndex) {
@@ -56,31 +55,31 @@ const Carousel = () => {
     }
 
     window.addEventListener('resize', handleResize)
-    handleResize() // Call on initial render
+    handleResize() 
 
     return () => window.removeEventListener('resize', handleResize)
   }, [totalImages])
 
-  // Calculate carousel and container widths
-  const carouselWidth = (imageWidth + gap) * imagesToShow - gap // Total width to show images minus the gap on the right
-  const containerWidth = (imageWidth + gap) * totalImages - gap // Total width including gaps
+  // calculate carousel and container widths
+  const carouselWidth = (imageWidth + gap) * imagesToShow - gap // total width to show images minus the gap on the right
+  const containerWidth = (imageWidth + gap) * totalImages - gap // total width including gaps
 
   const handlePrev = () => {
     setCurrentIndex(prevIndex => {
-      if (prevIndex === 0) return totalImages - imagesToShow // Go to the last set
+      if (prevIndex === 0) return totalImages - imagesToShow 
       return prevIndex - 1
     })
   }
 
   const handleNext = () => {
     setCurrentIndex(prevIndex => {
-      if (prevIndex >= totalImages - imagesToShow) return 0 // Go back to the start
+      if (prevIndex >= totalImages - imagesToShow) return 0 
       return prevIndex + 1
     })
   }
 
   return (
-    <div style={{ overflow: 'hidden' }}>
+    <div style={{ overflow: 'hidden' }} id="services">
       <div className="carousel-container" style={{ width: `${carouselWidth}px` }}>
         <div
           className="carousel-images-container"
@@ -88,7 +87,7 @@ const Carousel = () => {
             width: `${containerWidth}px`,
             transform: `translateX(-${currentIndex * (imageWidth + gap)}px)`,
             display: 'flex',
-            transition: 'transform 0.3s ease-in-out', // Smooth transition
+            transition: 'transform 0.3s ease-in-out', 
           }}
         >
           {images.map((image, index) => (
