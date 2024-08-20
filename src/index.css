@@ -111,7 +111,27 @@
   --section-content-p-font-size-mobile: 16px; 
   --md-section-content-gap: 10px;
   --md-section-main-gap: 15px;
+
+  /* Accordion Variables */
+  --accordion-gap: 10px;
+  --accordion-padding: 20px;
+  --accordion-border: 1px solid #AAAAAA;
+  --accordion-transition-duration: 0.15s;
+  --accordion-icon-height: 10.1px;
+  --accordion-icon-width: 20.21px;
+  --accordion-font-size: 20px;
+  --accordion-text-color: var(--text-color);
+  --accordion-content-margin-top: 18.5px;
+  --accordion-content-margin-top-open: 21.5px;
+
+  /* Accordion Mobile Variables */
+  --accordion-padding-mobile: 15px;
+  --accordion-text-color-mobile: #707070;
+  --accordion-gap-mobile: 5px;
+  --accordion-content-margin-top-mobile: 15px;
+  --accordion-font-size-mobile: 16px;
 }
+
 
 /* Global Styles */
 * {
