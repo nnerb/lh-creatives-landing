@@ -130,6 +130,22 @@
   --accordion-gap-mobile: 5px;
   --accordion-content-margin-top-mobile: 15px;
   --accordion-font-size-mobile: 16px;
+
+  /* Form Variables */
+  --form-text-color: var(--text-color);
+  --form-border-color: #AAAAAA;
+  --form-background-color: #EEEEEE;
+  --input-padding: 10.5px;
+  --input-font-size: 16px;
+  --input-border-radius: 3px;
+  --checkmark-color: #E3007F;
+  --form-gap: 20px;
+  --submit-button-background-color: var(--contact-button-background-color);
+  --submit-button-text-color: var(--contact-button-text-color);
+  --submit-button-padding: 12px 59px;
+  --submit-button-font-size: 20px;
+  --submit-button-border-radius: 5px;
+  --form-border-width: 1px;
 }
 
 

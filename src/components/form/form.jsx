@@ -63,7 +63,7 @@ const Form = () => {
           onChange={handleChange}
         />
         <TextInput
-          label="Email"
+          label="E-mail"
           type="email"
           name="email"
           value={formData.email}
