@@ -1,6 +1,6 @@
-import FourColumnCard from './_components/four-column-card';
-import ThreeColumnCard from './_components/three-column-card';
-import './card.css';
+import FourColumnCard from './_components/four-column-card'
+import ThreeColumnCard from './_components/three-column-card'
+import './card.css'
 
 const Card = () => {
   return (
@@ -11,4 +11,4 @@ const Card = () => {
   );
 }
  
-export default Card;
+export default Card
