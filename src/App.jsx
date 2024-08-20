@@ -1,6 +1,7 @@
 import Accordion from "./components/accordion/accordion"
 import Card from "./components/card/card"
 import Carousel from "./components/carousel/caroursel"
+import Form from "./components/form/form"
 import Hero from "./components/hero/hero"
 import Navbar from "./components/navbar/navbar"
 import Section from "./components/section/section"
@@ -18,6 +19,7 @@ function App() {
           <Card />
           <Section />
           <Accordion />
+          <Form />
         </div>
       </div>
       </div>
