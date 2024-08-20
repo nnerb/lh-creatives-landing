@@ -7,7 +7,7 @@ const MenuItems = () => {
   const handleClick = (e, id) => {
     e.preventDefault()
     scrollToElement(id, 150)
-  };
+  }
 
   return (
     <>
